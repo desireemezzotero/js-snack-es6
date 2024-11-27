@@ -17,7 +17,10 @@
    6. stampo tutto in pagina
    */
   
-const soccerTeam = document.querySelector('soccer-team');
+const soccerTeam = document.querySelector('.soccer-team');
+const soccerTeam2 = document.querySelector('.soccer-team2');
+const soccerTeam3 = document.querySelector('.soccer-team3');
+const soccerTeam4 = document.querySelector('.soccer-team4');
 
 const soccer = [
   {
@@ -65,7 +68,13 @@ for (let i = 0; i < soccer.length; i++) {
     falliSubiti : soccer[i].falliSubiti
   });
 
+  console.log(newSoccer)
 }
 
-soccerTeam.innerText = `la squadra ${newSoccer.nome} ha totalizatto ${newSoccer.falliSubiti} falli`
+  soccerTeam.innerText = `la squadra ${newSoccer[0].nome} ha totalizatto ${newSoccer[0].falliSubiti} falli`
+  soccerTeam2.innerText = `la squadra ${newSoccer[1].nome} ha totalizatto ${newSoccer[1].falliSubiti} falli`
+  soccerTeam3.innerText = `la squadra ${newSoccer[2].nome} ha totalizatto ${newSoccer[2].falliSubiti} falli`
+  soccerTeam4.innerText = `la squadra ${newSoccer[3].nome} ha totalizatto ${newSoccer[3].falliSubiti} falli`
+
+
 
